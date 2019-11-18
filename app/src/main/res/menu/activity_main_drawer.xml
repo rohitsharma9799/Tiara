@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/adduser"
+            android:icon="@drawable/useadd"
+            android:title="@string/adduser" />
+        <item
+            android:id="@+id/seals"
+            android:icon="@drawable/sele"
+            android:title="@string/Seals" />
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/report"
+            android:title="@string/repost" />
+
+        <item
+            android:id="@+id/contatus"
+            android:icon="@drawable/cont"
+            android:title="@string/Contactus" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="@string/menu_send" />
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/logout"
+            android:title="@string/Logout" />
+
+    </group>
+
+
+
+</menu>

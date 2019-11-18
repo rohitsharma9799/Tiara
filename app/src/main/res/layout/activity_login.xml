@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorLoginPrimaryDark"
+  >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:background="@drawable/logo_image"
+                android:layout_width="270dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditText"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:fontFamily="@font/times"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="20dp"
+                    android:hint="Username"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="Password"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/times"
+                    android:textColor="@color/blackTextColor"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="loginbtn"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_login_button" />
+
+
+           <!-- <Button
+                android:id="@+id/cirLoginButton"
+
+                android:layout_width="250dp"
+                android:gravity="center"
+                android:background="@drawable/retangle_grey_bg"
+                android:text="LOGIN"
+                android:textColor="@color/whiteCardColor"
+                android:layout_height="50dp"
+                android:fontFamily="@font/calibri"
+                android:textStyle="normal"
+                android:textSize="20dp"
+
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin" />-->
+
+            <TextView
+                style="@style/parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:onClick="Register"
+                android:text="No account yet? Create one"
+                android:textAlignment="center"
+                android:fontFamily="@font/times"
+                android:textColor="@color/blackTextColor"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:text="Forgot Password?"
+                android:id="@+id/forgotpass"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:layout_marginTop="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="12"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiara Software"
+                    android:layout_weight="6"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

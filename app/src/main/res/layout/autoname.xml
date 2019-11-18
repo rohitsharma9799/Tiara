@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relay"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name"
+            android:textSize="15sp"
+            android:text="dsfdsf"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:id="@+id/mobile"
+            android:textSize="13sp"
+            android:text="dsfdsf"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/mobile"
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:id="@+id/email"
+            android:textSize="13sp"
+            android:text="dsfdsf"
+            android:textColor="#000000"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

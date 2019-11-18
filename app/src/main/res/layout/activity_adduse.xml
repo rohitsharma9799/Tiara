@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/asdf"
+    android:background="@color/colorPrimary"
+    android:layout_height="55dp">
+
+    <ImageView
+        android:id="@+id/feback"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text=" Add Client"
+        android:layout_gravity="center"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/arial"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asdf"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:hint="Company"
+                android:lines="1"
+                android:textSize="17dp"
+                style="@style/MyEdittext"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"/>
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:hint="Name"
+                android:lines="1"
+                android:textSize="17dp"
+                style="@style/MyEdittext"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"/>
+
+
+
+
+            <EditText
+                android:id="@+id/mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:hint="Mobile"
+                android:lines="1"
+                android:textSize="17dp"
+                style="@style/MyEdittext"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"/>
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:hint="Email"
+                android:lines="1"
+                android:textSize="17dp"
+                style="@style/MyEdittext"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/cirLoginButton"
+        android:text="Save"
+        android:background="@color/colorPrimary"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:onClick="loginbtn"
+        android:layout_gravity="center_horizontal"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@color/blackTextColor"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/logo_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

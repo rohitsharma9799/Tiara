@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/linear1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/stockidtxt"
+        android:textSize="15dp"
+        android:text="stockid"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="1dp"
+        android:background="#424040"
+        android:layout_below="@+id/relay"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/sku"
+        android:textSize="15dp"
+        android:text="sku"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="1dp"
+        android:background="#424040"
+        android:layout_below="@+id/relay"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/metal"
+        android:textSize="15dp"
+        android:text="metal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="1dp"
+        android:background="#424040"
+        android:layout_below="@+id/relay"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/netwt"
+        android:textSize="15dp"
+        android:text="netwt"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="1dp"
+        android:background="#424040"
+        android:layout_below="@+id/relay"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/grosswt"
+        android:textSize="15dp"
+        android:text="grosswt"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="1dp"
+        android:background="#424040"
+        android:layout_below="@+id/relay"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

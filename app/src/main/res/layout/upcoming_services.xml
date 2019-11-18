@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            app:contentPadding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:onClick="Saleshomebtn"
+                    android:layout_width="match_parent"
+                    android:id="@+id/mobile"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:tint="@color/blackTextColor"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:srcCompat="@drawable/sele" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sale"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/times"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorPrimary"/>
+
+
+                <LinearLayout
+                    android:onClick="receiptbtn"
+                    android:layout_width="match_parent"
+                    android:id="@+id/dishtv"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:id="@+id/busbooking"
+                        android:tint="@color/blackTextColor"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:srcCompat="@drawable/report" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:gravity="center_horizontal"
+                        android:text="Receipt"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:onClick="qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bill"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:tint="@color/blackTextColor"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:srcCompat="@drawable/qr" />
+                    <!-- <android.support.design.widget.FloatingActionButton
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         app:layout_anchor="@id/app_bar"
+                         android:id="@+id/bill"
+                         app:backgroundTint="@color/darkpurple"
+                         android:layout_gravity="center"
+                         app:srcCompat="@drawable/bulb"/>-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearonenn"
+
+            android:visibility="visible"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:onClick="UserAdd"
+                    android:layout_width="match_parent"
+                    android:id="@+id/layout_bus"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:tint="@color/blackTextColor"
+                        app:backgroundTint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/adduser"
+                        android:layout_marginTop="25dp"
+                      />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Client"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:onClick="Contactusbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/train_lay"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:id="@+id/train"
+                        android:tint="@color/blackTextColor"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="25dp"
+                        app:srcCompat="@drawable/cont" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Contact us"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:onClick="Aboutusbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/linear_layout_one"
+                    android:layout_weight="3"
+                    custom:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="50dp"
+                        android:tint="@color/blackTextColor"
+                        android:layout_height="50dp"
+                        app:backgroundTint="#e2f90303"
+                        app:srcCompat="@drawable/about" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:text="About us"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+                </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@color/blackTextColor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/logo_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

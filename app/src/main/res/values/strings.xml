@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tiara</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="adduser">Client</string>
+    <string name="Seals">Sale</string>
+    <string name="repost">Receipt</string>
+    <string name="menu_tools">Payment</string>
+    <string name="menu_share">Feedback</string>
+    <string name="menu_send">About</string>
+    <string name="Contactus">Contact Us</string>
+    <string name="Logout">Logout</string>
+
+</resources>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FinalSales">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/asdf"
+        android:background="@color/colorPrimary"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bdccdck"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Final Sale"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:layout_marginRight="35dp"
+            android:textSize="19dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/times"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/asdf"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total GWt :"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textSize="16dp"
+                android:textColor="@color/blackTextColor"
+                android:fontFamily="@font/times"
+                android:gravity="center_vertical"
+                android:layout_weight="60"/>
+            <TextView
+                android:id="@+id/tv_totalgwt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:text="0.00"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/times"
+                android:layout_marginTop="4dp"
+                android:gravity="end|center"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Loss % :"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackTextColor"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/times"
+                android:layout_weight="60"/>
+            <EditText
+                android:id="@+id/txt_loss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:hint="0.00"
+                android:lines="1"
+                android:textSize="17dp"
+                style="@style/MyEdittext"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total :"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackTextColor"
+                android:layout_margin="5dp"
+                android:gravity="center|start"
+                android:fontFamily="@font/times"
+                android:layout_weight="60"/>
+            <TextView
+                android:id="@+id/txt_addloss"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:text="0.00"
+                android:textStyle="bold"
+                android:fontFamily="@font/times"
+                android:textColor="#000"
+                android:gravity="end|center"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Metal Receipt :"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackTextColor"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/times"
+                android:layout_weight="60"/>
+            <EditText
+                android:id="@+id/txt_mentalrecipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="40"
+                android:hint="0.00"
+                android:lines="1"
+                style="@style/MyEdittext"
+                android:textSize="17dp"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:fontFamily="@font/times"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Amount :"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackTextColor"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:fontFamily="@font/times"
+                />
+
+            <TextView
+                android:id="@+id/txt_addmental"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="-4dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0.00"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/times"
+                android:textColor="@color/blackTextColor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:layout_marginTop="-4dp"
+                android:gravity="center_vertical"
+                android:text="    x    "
+                android:layout_gravity="center"
+                android:fontFamily="@font/times"
+                android:textColor="#000" />
+            <EditText
+                android:id="@+id/txt_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="0.00"
+                android:lines="1"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:textSize="17dp"
+                style="@style/MyEdittext"
+                android:fontFamily="@font/arial"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Calculate Amount :"
+                android:layout_margin="5dp"
+                android:textColor="@color/blackTextColor"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/arial"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="60"/>
+            <TextView
+                android:id="@+id/tv_addother"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:text="0.00"
+                android:textSize="17dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/times"
+                android:textColor="@color/blackTextColor"
+                android:gravity="end|center"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Amount Recivied :"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/blackTextColor"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/times"
+            android:textSize="16dp"
+            android:layout_weight="60"/>
+            <EditText
+                android:id="@+id/txt_AmtRecived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:layout_marginTop="4dp"
+                android:hint="0.00"
+                android:lines="1"
+                style="@style/MyEdittext"
+                android:textSize="17dp"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/times"
+                android:gravity="center_vertical"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total Amount :"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackTextColor"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/times"
+                android:textSize="16dp"
+                android:layout_weight="60"/>
+            <TextView
+                android:id="@+id/finalTotal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:text="0.00"
+                android:layout_gravity="center"
+                android:layout_marginLeft="95dp"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:fontFamily="@font/times"
+                android:gravity="end|center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@color/blackTextColor"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/logo_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/cirLoginButton"
+        android:text="Save"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="Savebtn"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="@dimen/loginViewsMargin" />
+</RelativeLayout>
