@@ -104,7 +104,9 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new SliderTimer(), 2000, 3000);
 
-        AdsLarge();
+        //AdsLarge();
+
+
 
 
     }
